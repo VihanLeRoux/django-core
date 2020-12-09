@@ -1,0 +1,156 @@
+
+.about {
+    padding: 5rem 8rem 3rem 8rem;
+    background-color: #fff;
+    
+}
+
+.profile-pic {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.about-text {
+    padding-left: 2rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+}
+
+.skills {
+    background-color:  #eee;
+    padding: 5rem 15% 3rem 15%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.skill-bar {
+    width: 100%;
+    background-color: #ccc;
+    
+}
+  
+.skill {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.web {width: 95%; background-color: black;}
+.photo {width: 80%; background-color: black;}
+.market {width: 60%; background-color: black;}
+
+.parallax {
+    background-image: url("../images/web-dev.jpg");
+    height: 25rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+}
+
+.clients {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.client-item {
+    float: left;
+    width: 25%;
+    height: 10rem;
+    padding-top: 3rem;
+    transition: 0.5s ease;
+}
+
+.client-item span{
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+}
+.client-item:hover {
+    background: #555;
+}
+
+.tech {
+    background-color: #bbb;
+    width: 100%;
+    padding: 5rem 15% 3rem 15%;
+    text-align: center;
+    display: inline-block;
+}
+
+.tech span {
+    font-size: 3rem;
+    padding: 2rem;
+    width: 7rem;
+    height: 7rem;
+    transition: 0.5s ease;
+}
+
+.tech span:hover {
+    transform: scale(1.5);
+}
+
+.fa-html5 {color: #e85d25;}
+.fa-css3 {color: #249cda;}
+.fa-js-square {color: #f2d53c;}
+.fa-python {color: #366c9c;}
+.fa-php {color: #858ebb;}
+.fa-linux {color: #000000;}
+.fa-ubuntu {color: #d74614;}
+.fa-git {color: #e84d31;}
+
+.fade {
+	opacity: 0;
+	transform: translate(0, 50px); 
+	transition: all 1.8s ease;
+}
+.fade.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+
+.gallary-img-wrap {
+    width: 33.33%;
+    height: 18rem;
+    float: left;
+    overflow: hidden;
+    transition: 0.5s ease;
+    
+}
+.stock {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.stock:hover,
+.stock:focus {
+    transform: scale(1.2);
+}
+
+.gallary-img-wrap:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    padding: 5rem 15% 3rem 15%;
+    background-color: #fff;
+    margin-top: 18rem;
+}

@@ -1,0 +1,297 @@
+@import url(../fonts/nemoy/stylesheet.css);
+@import url(../fonts/raleway/Raleway.css);
+@import url(../fonts/fontawesome/fontawesome.css);
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #7766ff;
+}
+body {
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    background-color: #000;
+    transition: 0.5s ease;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, .intrycket {
+    font-family: "NemoyLight";
+}
+
+.intrycket {
+    font-family: "NemoyMedium";
+}
+
+#top-scroll {
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.top-scroll {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background: black;
+    border-radius: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 2.8rem;
+    text-align: center;
+    margin-right: 1rem;
+    transition: 0.5s ease;
+    z-index: 50;
+    opacity: 1;
+	transform: translate(0, 0);
+}
+
+.top-scroll:hover {
+    cursor: pointer;
+    background: #555;
+    transition: 0.5s ease;
+}
+
+/* Navigation panel */
+
+.nav-bar {
+    background-color: #111;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 200 !important;
+    transition: 1s ease;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
+    transition: 0.5s ease;
+}
+
+.nav-header {
+    font-weight: bold;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.fixed + .container {
+    margin-top: 6.8rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.sticky + .container {
+    margin-top: 3.6rem;
+}
+
+/* Slide show */
+
+.slide-show {
+    height: 100vh;
+}
+
+.slide {
+    transition: 0.8s ease-in-out;
+    transform: translate(0, 0);
+    z-index: -100 !important;
+    position: relative;
+}
+.slide-none {
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+    transform: translate(-10%, 0);
+}
+
+.img-cover {
+    object-fit: cover;
+    position: fixed;
+    z-index: -100 !important;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+.caption {
+    position:absolute;
+	left: 0;
+	right: 0;
+	width: 35em;
+	margin: auto;
+	padding: 1em;
+	background: rgba(0, 0, 0, 0.5);
+	border: 0.1em solid #f1f1f1;
+	transition: 0.8s ease-in-out;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+	margin-top:25%;
+}
+.caption a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.dot-box {
+	left: 0;
+	right: 0;
+    margin: auto;
+    text-align:center;
+    position: relative;
+    top: 93%;
+}
+
+.dot {
+	z-index: -500 !important;
+	height: 1em;
+	width: 1em;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 0.05em solid #fff;
+	border-radius: 100%;
+	display: inline-block;
+	transition: 0.8s ease-in-out;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	cursor: pointer;
+}
+
+.active-dot {
+	background-color: #fff;
+    transition: 1s ease;
+    transition: 0.8s ease-in-out;
+}
+
+/* Content */
+
+.content{
+    background-color: #fff;
+    z-index: 50 !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 3rem 10% 9rem 10%;
+    padding: 1rem;
+    
+}
+
+/* Devider columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-80 {
+    width: 80%;
+    float: left;
+}
+
+.col-70 {
+    width: 70%;
+    float: left;
+}
+
+.col-60 {
+    width: 60%;
+    float: left;
+}
+
+.col-40 {
+    width: 40%;
+    float: left;
+}
+
+.col-30 {
+    width: 30%;
+    float: left;
+}
+
+.col-20 {
+    width: 20%;
+    float: left;
+}
+
+.left {
+    padding-right: 0.5rem;
+}
+
+.right {
+    padding-left: 0.5rem;
+}
+
+.center {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+    padding: 3rem;
+    background-color: #999;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: -100rem;
+}
+
+.footer-icon {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 3.5rem;
+    margin: 0 -0.15rem 0 -0.15rem;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;
+}
+
+.footer-icon:hover {
+    background: #555;
+}
+
+.fa-facebook-f {background: #3B5998;}
+.fa-github {background: #24292e;}
+.fa-instagram {background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+.fa-linkedin-in {background: #007bb5;}
+.fa-pinterest-p {background: #cb2027;}
+.fa-reddit-alien {background: #ff5700;}
+.fa-stack-overflow {background: #f48024;}
+
+.none-display {
+	opacity: 0;
+	transform: translate(0, 50px); 
+	transition: all 1.8s ease;
+}

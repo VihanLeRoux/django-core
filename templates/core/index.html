@@ -1,0 +1,72 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+    {% block content %}
+        <div class="row about">
+            <div class="col-40">
+                <img src="{% static 'images/admin-profile-pic.jpg' %}" class="profile-pic fade"/>
+            </div>
+            <div class="col-60 about-text">
+                <h1>About</h1>
+                <p>Hi, my name is Vihan Le Roux. I developed my own startup company, <span class="intrycket">Intrycket Design</span>, to help create an online presence for companies. </p>
+                <p>I design and develop intricate websites that are aimed at leaving a lasting impression. I take photos that are meant to amaze and inspire.</p>
+                <p>If you are unsure about how to get your business digital or you just want some advice on what to do next, I also do consulting for no extra
+                cost. So if you need help with digital marketing, please contact me and I will help.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <p><span class="fas fa-laptop-code"></span> Web development</p>
+            <div class="skill-bar fade">
+                <div class="skill web">95%</div>
+            </div>
+            <p><span class="fas fa-camera"></span> Photography</p>
+            <div class="skill-bar fade">
+                <div class="skill photo">80%</div>
+            </div>
+            <p><span class="fas fa-bullhorn"></span> Digital marketing</p>
+            <div class="skill-bar fade">
+                <div class="skill market">60%</div>
+            </div>
+        </div>
+        <div class="parallax"></div>
+        <div class="clients">
+            <div class="client-item"><span>5+</span>Projects</div>
+            <div class="client-item"><span>1+</span>Contracts</div>
+            <div class="client-item"><span>2+</span>Consultations</div>
+            <div class="client-item"><span>2+</span>Happy Clients</div>
+        </div>
+        <div class="tech">
+            <h1>Technologies</h1>
+            <span class="fab fa-html5"></span>
+            <span class="fab fa-css3"></span>
+            <span class="fab fa-js-square"></span>
+            <span class="fab fa-python"></span>
+            <span class="fab fa-php"></span>
+            <span class="fab fa-linux"></span>
+            <span class="fab fa-ubuntu"></span>
+            <span class="fab fa-git"></span>
+            <span>+15</span>
+        </div>
+        <div class="gallary">
+            <div class="gallary-img-wrap">
+                <img src="{% static 'images/stock1.jpg' %}" class="stock">
+            </div>
+            <div class="gallary-img-wrap">
+                <img src="{% static 'images/stock2.jpg' %}" class="stock">
+            </div>
+            <div class="gallary-img-wrap">
+                <img src="{% static 'images/stock3.jpg' %}" class="stock">
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Contact</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    {% endblock %}

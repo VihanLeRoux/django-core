@@ -1,0 +1,61 @@
+input[type=text], input[type=email], input[type=password], textarea {
+    border-radius: unset;
+    border: none;
+    border-bottom: 0.05rem solid #999;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1rem 0 1rem 0;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+    width: 100%;
+    border: none;
+    border-bottom: 0.05em solid #000;
+    background: none;
+    outline-width: 0;
+}
+
+input[type=submit], input[type=button], button {
+    border-radius: unset;
+    border: none;
+    background-color: #111;
+    color: white;
+    width:7rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+    background-color: #555;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+input[type=file] {
+    font-size: 1rem;
+    border-bottom: 0.05rem solid #999;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+input[type=checkbox] {
+    border-radius: unset;
+    border: none;
+    border: 0.05rem solid #999;
+}
+
+.link-button {
+    background-color:#111;
+    color: white;
+    padding: 0.7rem 0.8rem;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+}
+
+.link-button:hover {
+    background-color:#555;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}

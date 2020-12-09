@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1000px) {
+
+    .content{
+        margin: 1rem;
+    }
+    
+    .caption {
+        width: 70%;
+        top:25%;
+    }
+
+    .col-70, .col-30, .col-60, .col-40, .col-20, .col-80 {
+        width: 100%;
+    }
+
+    .left, .right, .center {
+        padding: 0;
+    }
+
+    
+    .profile-pic {
+        margin-top: 2rem;
+        width: 15rem;
+        height: 15rem;
+        padding: 0;
+    }
+
+    .about {
+        text-align: center;
+        padding: 5rem 5% 3rem 5%;
+    }
+
+    .about-text {
+        padding: 0;
+    }
+
+    .about-text p {
+        text-align: left;
+        
+    }
+
+    .tech {
+        background-color: #bbb;
+        padding: 5rem 5% 3rem 5%;
+    }
+
+    .gallary-img-wrap {
+        width: 100%;
+    }
+
+    .contact {
+        margin-top: 54rem;
+    }
+
+    .client-item {
+        width: 50%;
+    }
+    
+}
